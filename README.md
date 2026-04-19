@@ -49,3 +49,34 @@ In this exercise, you will:
 ---
 
 &copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+
+## Local preview for Intentcue website
+
+### Full Next.js app (preferred)
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Run development server:
+   ```bash
+   npm run dev
+   ```
+3. Open `http://localhost:3000`.
+
+Available routes:
+- `/` Home landing page
+- `/engine` Universal Prompt Engine overview
+- `/sdk` SDK quickstart page
+- `/founder` Founder perspective page
+
+### No-install fallback preview (for restricted environments)
+
+If npm registry access is blocked, run a static preview:
+
+```bash
+python3 -m http.server 4173
+```
+
+Then open:
+- `http://localhost:4173/preview/`

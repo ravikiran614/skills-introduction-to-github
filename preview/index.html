@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intentcue Preview</title>
+    <style>
+      body { margin: 0; font-family: Inter, system-ui, sans-serif; background: #020617; color: #e2e8f0; }
+      .wrap { max-width: 960px; margin: 0 auto; padding: 32px 20px; }
+      .card { border: 1px solid #1e293b; background: #0f172a; border-radius: 12px; padding: 16px; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 12px; }
+      code, pre { color: #67e8f9; }
+      a { color: #67e8f9; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Intentcue — Intent Orchestration for Production LLM Apps</h1>
+      <p>Fallback static preview for restricted environments where npm install is blocked.</p>
+      <div class="card">
+<pre>const run = await cue.intent.dispatch(["openai", "anthropic", "groq"], {
+  intent: "support.refund.v2",
+  input: { message: "I was charged twice" },
+  eval: { profile: "strict" }
+});</pre>
+      </div>
+      <h2>Why developers switch</h2>
+      <div class="grid">
+        <div class="card">Prompt drift after model updates</div>
+        <div class="card">Fragmented provider payloads and debug workflows</div>
+        <div class="card">Unpredictable rollout behavior in production</div>
+      </div>
+
+      <h2 style="margin-top: 28px">Routes in full Next.js app</h2>
+      <ul>
+        <li><strong>/</strong> Home</li>
+        <li><strong>/engine</strong> Universal Prompt Engine</li>
+        <li><strong>/sdk</strong> SDK Quickstart</li>
+        <li><strong>/founder</strong> Founder Perspective</li>
+      </ul>
+
+      <p style="margin-top: 20px">When npm access is available, run the full app via <code>npm install && npm run dev</code>.</p>
+    </div>
+  </body>
+</html>
